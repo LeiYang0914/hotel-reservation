@@ -107,7 +107,7 @@ print(f"{'Logistic Regression Classifier':<38} | {lr_auc:.4f}")
 print("="*60)
 
 print("\n========== PHASE 5: SERIALIZING WINNING MODEL BINARY ==========")
-model_save_base_path = "/user/hotel_prediction/saved_models/best_bigdata_hadoop_model"
+model_save_base_path = "hdfs://localhost:9000/user/hotel_prediction/saved_models/best_bigdata_hadoop_model"
 
 # Compare operational scores and persist the best variant state
 if rf_auc >= lr_auc:

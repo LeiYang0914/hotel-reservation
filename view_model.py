@@ -12,7 +12,7 @@ spark = SparkSession.builder \
 spark.sparkContext.setLogLevel("ERROR")
 
 # Define the absolute HDFS path where the model is stored
-HDFS_MODEL_PATH = "/user/hotel_prediction/saved_models/best_bigdata_hadoop_model"
+HDFS_MODEL_PATH = "hdfs://localhost:9000/user/hotel_prediction/saved_models/best_bigdata_hadoop_model"
 
 print("\n" + "="*60)
 print(f"LOADING SAVED BINARY MODEL FROM HDFS:\n{HDFS_MODEL_PATH}")
