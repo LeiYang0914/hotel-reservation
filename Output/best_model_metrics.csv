@@ -1,0 +1,2 @@
+model,roc_auc,pr_auc,accuracy,precision,recall,f1_score,training_time_seconds
+Gradient Boosted Tree,0.8937,0.8384,0.837,0.8342,0.837,0.8335,2.68
